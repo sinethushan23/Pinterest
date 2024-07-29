@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:pinterest/pages/createaccount.dart';
 import 'package:pinterest/pages/home.dart';
+import 'package:pinterest/pages/messages.dart';
 import 'package:pinterest/pages/signup.dart';
+import 'package:pinterest/pages/profile.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,14 +21,11 @@ class MyApp extends StatelessWidget {
       initialRoute: '/signup',
       routes: {
         '/home': (context) => Homepage(),
-        '/signup': (context) => signup(), 
-         '/createaccount' : (context) => createAccount(),          // Add this line
+        '/signup': (context) => signup(),
+        '/createaccount': (context) => createAccount(),
+        '/profile': (context) => profile(),
+        '/messages': (context) => messages(),
       },
-      
-      );
-      
+    );
   }
 }
-
-
-
