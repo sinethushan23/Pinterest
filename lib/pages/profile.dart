@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pinterest/pages/createpin.dart';
 
 class profile extends StatelessWidget {
   const profile({super.key});
@@ -49,6 +50,19 @@ class profile extends StatelessWidget {
             fontSize: 15,
           ),
         ),
+        Row(
+          children: [
+            Expanded(
+              child: Center(
+                child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.pushNamed(context, '/createpin');
+                    },
+                    child: Text("Create Pin")),
+              ),
+            ),
+          ],
+        )
       ]),
     );
   }

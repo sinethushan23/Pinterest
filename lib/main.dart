@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pinterest/pages/createaccount.dart';
+import 'package:pinterest/pages/createpin.dart';
 import 'package:pinterest/pages/home.dart';
 import 'package:pinterest/pages/messages.dart';
 import 'package:pinterest/pages/signup.dart';
@@ -12,7 +13,7 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
+  //  widget root
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
         '/createaccount': (context) => createAccount(),
         '/profile': (context) => profile(),
         '/messages': (context) => messages(),
+        '/createpin': (context) => createPin(),
       },
     );
   }
