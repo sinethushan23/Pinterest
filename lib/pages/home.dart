@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pinterest/pages/createpin.dart';
 import 'package:pinterest/pages/messages.dart';
 import 'package:pinterest/pages/profile.dart';
 
@@ -47,19 +48,10 @@ class Homepage extends StatelessWidget {
                 label: 'Home'),
             BottomNavigationBarItem(
                 icon: IconButton(
-                  icon: Icon(Icons.search),
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Homepage()));
-                  },
-                ),
-                label: 'Search'),
-            BottomNavigationBarItem(
-                icon: IconButton(
                   icon: Icon(Icons.post_add),
                   onPressed: () {
                     Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Homepage()));
+                        MaterialPageRoute(builder: (context) => createPin()));
                   },
                 ),
                 label: 'Post'),

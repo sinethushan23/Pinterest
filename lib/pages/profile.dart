@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:pinterest/pages/createpin.dart';
 
 class profile extends StatelessWidget {
   const profile({super.key});
