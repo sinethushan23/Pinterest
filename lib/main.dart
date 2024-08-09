@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pinterest/pages/MongoDB/mongodb.dart';
 import 'package:pinterest/pages/createaccount.dart';
 import 'package:pinterest/pages/createpin.dart';
 import 'package:pinterest/pages/home.dart';
@@ -6,7 +7,9 @@ import 'package:pinterest/pages/messages.dart';
 import 'package:pinterest/pages/signup.dart';
 import 'package:pinterest/pages/profile.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await MongoDatabase.connect();
   runApp(const MyApp());
 }
 
